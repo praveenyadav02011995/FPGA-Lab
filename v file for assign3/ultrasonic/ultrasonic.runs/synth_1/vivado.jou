@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 16 16:31:36 2023
+# Process ID: 5984
+# Current directory: C:/Users/Praveen/Downloads/ultrasonic/ultrasonic.runs/synth_1
+# Command line: vivado.exe -log refresher250ms.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source refresher250ms.tcl
+# Log file: C:/Users/Praveen/Downloads/ultrasonic/ultrasonic.runs/synth_1/refresher250ms.vds
+# Journal file: C:/Users/Praveen/Downloads/ultrasonic/ultrasonic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source refresher250ms.tcl -notrace

@@ -1,0 +1,316 @@
+
+*** Running vivado
+    with args -log ULTRASonicSensor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ULTRASonicSensor.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ULTRASonicSensor.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 358.902 ; gain = 66.570
+Command: synth_design -top ULTRASonicSensor -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5936 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 569.184 ; gain = 185.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ULTRASonicSensor' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:21]
+	Parameter constant bound to: 1197 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pg' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'pg' (1#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:52]
+INFO: [Synth 8-6157] synthesizing module 'count8' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'count8' (2#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:65]
+INFO: [Synth 8-6157] synthesizing module 'count24' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'count24' (3#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:104]
+INFO: [Synth 8-6157] synthesizing module 'fdce16' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:143]
+INFO: [Synth 8-6157] synthesizing module 'fdce' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'fdce' (4#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'fdce16' (5#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:143]
+INFO: [Synth 8-6157] synthesizing module 'SEVEN_SEGMENT' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'SEVEN_SEGMENT' (6#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:185]
+WARNING: [Synth 8-689] width (8) of port connection 'DISP' does not match port width (7) of module 'SEVEN_SEGMENT' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:47]
+INFO: [Synth 8-6157] synthesizing module 'binbcd16' [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:281]
+INFO: [Synth 8-6155] done synthesizing module 'binbcd16' (7#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:281]
+INFO: [Synth 8-6155] done synthesizing module 'ULTRASonicSensor' (8#1) [C:/Users/Praveen/Downloads/Ultra/Ultra/ULTRASonicSensor.v:21]
+WARNING: [Synth 8-3917] design ULTRASonicSensor has port seg[7] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 632.137 ; gain = 248.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 632.137 ; gain = 248.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 632.137 ; gain = 248.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 632.137 ; gain = 248.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 44    
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 37    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module count8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fdce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SEVEN_SEGMENT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+Module binbcd16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 43    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design ULTRASonicSensor has port SIG_PD driven by constant 1
+WARNING: [Synth 8-3917] design ULTRASonicSensor has port seg[7] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 796.695 ; gain = 412.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 799.266 ; gain = 415.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 799.266 ; gain = 415.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     3|
+|4     |LUT2   |    24|
+|5     |LUT3   |    27|
+|6     |LUT4   |    19|
+|7     |LUT5   |    20|
+|8     |LUT6   |    40|
+|9     |FDCE   |    19|
+|10    |FDRE   |    70|
+|11    |IBUF   |     5|
+|12    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   257|
+|2     |  cnt1   |count8        |    21|
+|3     |  cnt2   |count24       |    61|
+|4     |  cnt3   |count24_0     |    37|
+|5     |  fg     |fdce16        |    61|
+|6     |    d10  |fdce          |     4|
+|7     |    d11  |fdce_2        |    25|
+|8     |    d12  |fdce_3        |    12|
+|9     |    d13  |fdce_4        |     4|
+|10    |    d14  |fdce_5        |     1|
+|11    |    d15  |fdce_6        |     5|
+|12    |    d16  |fdce_7        |     1|
+|13    |    d5   |fdce_8        |     1|
+|14    |    d6   |fdce_9        |     1|
+|15    |    d7   |fdce_10       |     4|
+|16    |    d8   |fdce_11       |     2|
+|17    |    d9   |fdce_12       |     1|
+|18    |  pga    |pg            |     1|
+|19    |  pgb    |pg_1          |     2|
+|20    |  seg2   |SEVEN_SEGMENT |    52|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 799.320 ; gain = 415.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 886.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 886.879 ; gain = 527.977
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 886.879 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Praveen/Downloads/project_ultra/project_ultra.runs/synth_1/ULTRASonicSensor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ULTRASonicSensor_utilization_synth.rpt -pb ULTRASonicSensor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 17:15:19 2023...
