@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Benstin Davis/Desktop/Benstin Davis/SEM6/FPGA Lab/SineWave
+vCORDIC_sine
+!s110 1681496036
+!i10b 1
+!s100 AW0<c423i0@=;EfDX5o<X2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I6n87:Oe>AJ]bP8c7Tc4In2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681496034
+8C:/Users/Benstin Davis/Desktop/Benstin Davis/SEM6/FPGA Lab/SineWave/CORDIC_sine.v
+FC:/Users/Benstin Davis/Desktop/Benstin Davis/SEM6/FPGA Lab/SineWave/CORDIC_sine.v
+!i122 0
+L0 2 144
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1681496036.000000
+!s107 C:/Users/Benstin Davis/Desktop/Benstin Davis/SEM6/FPGA Lab/SineWave/CORDIC_sine.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Benstin Davis/Desktop/Benstin Davis/SEM6/FPGA Lab/SineWave/CORDIC_sine.v|
+!i113 1
+o-work work
+tCvgOpt 0
+n@c@o@r@d@i@c_sine
